@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(210, 210, 210);
+    font-family: 'DM Mono', monospace;
+    font-size: 20px;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    background-color: rgb(255, 145, 56);
+    height: 7vh;
+    border-radius: 0px 0px 10px 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+ol {
+    list-style-type: none;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    flex: 50%;
+}
+
+nav div.left-side {
+    padding-left: 90px;
+}
+
+nav ol {
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+nav ol li {
+    display: inline;
+    margin-left: 40px
+}
+
+nav ol li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav div.right-side {
+    padding-right: 90px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav .right-side a {
+    font-size: 15;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    border: none;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+/* Navbar Stop */
+
+
+/* Blog */
+/* Blog Form */
+.blog-form {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    margin: 80px auto;
+}
+
+.blog-form .form-container {
+    width: 500px;
+}
+
+.blog-form .form-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.blog-form form label {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.blog-form .form-container .startend {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-form .form-container .startend .startdiv {
+    width: 225px;
+}
+
+.blog-form .form-container .startend .enddiv {
+    width: 225px;
+}
+
+.blog-form form input,
+textarea,
+select {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+}
+
+
+.blog-form form textarea {
+    height: 250px;
+}
+
+.blog-form .form-container .container {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.blog-form .form-container .container .divkiri {
+    width: 250px;
+}
+
+.blog-form .form-container .container .divkanan {
+    width: 250px;
+}
+
+.blog-form form .input-blog-image-group {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.blog-form .form-container .container .option_item {
+    display: flex;
+}
+
+.blog-form .form-container .container input {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.blog-form form .input-blog-image-group label p {
+    font-size: 15px;
+    background-color: grey;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.blog-form form .input-blog-image-group label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-form form .button-group {
+    text-align: right;
+}
+
+.blog-form form button {
+    margin-top: 50px;
+    padding: 8px 20px;
+    font-size: 17px;
+    background: #ec4d37;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.blog hr {
+    border: 1px solid #dbdbdb;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Blog list */
+.blog .blog-list {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.blog .blog-list .blog-list-item {
+    width: 25%;
+    height: 600px;
+    padding: 15px;
+    margin: 40px;
+    border: 2px solid #dbdbdb;
+    background-color: rgba(139, 139, 139, 0.431);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog .blog-list .blog-list-item .blog-image {
+    flex: 1;
+}
+
+.blog .blog-list .blog-list-item .blog-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.blog .blog-list .blog-list-item .blog-content {
+    flex: 2;
+    margin-top: 10px;
+}
+
+.blog .blog-list .btn-group {
+    text-align: center;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    object-fit: cover;
+}
+
+.blog .blog-list .btn-group .btn-edit {
+    width: 147px;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    background: #dbdbdb;
+}
+
+.blog .blog-list .btn-group .btn-post {
+    width: 147px;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    background: #ec4d37;
+    color: #fff;
+}
+
+.blog .blog-list h4 a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.blog .blog-list .detail-blog-content {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.blog .blog-list .blog-list-item p {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.blog .blog-list .blog-list-item .logo {
+    display: flex;
+}
+
+.blog .blog-list .blog-list-item .logo img {
+    width: 30px;
+}
+
+.blog .blog-list .blog-list-item .logo div {
+    margin: 5px;
+}
+
+/* Blog Detail */
+
+.blog-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto;
+}
+
+.blog-detail-container {
+    width: 900px;
+    margin: 40px 0;
+    box-sizing: border-box;
+}
+
+.blog-detail div.paragraf {
+    width: 900px;
+}
+
+.blog-detail-container .detcon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-detail-container .detcon .Lkiri {
+    width: 600px;
+    margin-right: 20px;
+}
+
+.blog-detail-container .detcon .Rkanan {
+    width: 300px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blog-detail-container .detcon .Lkiri img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.detcon .Rkanan img {
+    width: 25px;
+    height: 25px;
+}
+
+.detcon .Rkanan .text2 {
+    margin-top: 20px;
+}
+
+.detcon .Rkanan .text2 .log {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detcon .Rkanan .text2 .log2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.blog-detail-container h3 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 120%;
+    margin-bottom: 50px;
+}
+
+.blog-detail-container h4 {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 120%;
+    margin-bottom: 15px;
+}
+
+.blog-detail-container p {
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: justify;
+}
+
+/* card*/
+/*container */
+
+.cardbox {
+    width: 1200px;
+    margin: 80px auto;
+    padding: 25px;
+    display: flex;
+    border: solid 3px orange;
+    background-color: seashell;
+    border-radius: 20px 0px 20px 0px;
+    box-sizing: border-box;
+}
+
+.cardbox div {
+    display: flex;
+    flex: 50%;
+    margin: 3px;
+    align-items: stretch;
+    box-sizing: border-box;
+}
+
+/*items 1*/
+
+.cardbox div.boxleft {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+div.tulis {
+    flex-direction: column;
+}
+
+.boxleft h1 {
+    text-align: left;
+}
+
+.boxleft p {
+    text-align: justify;
+}
+
+.boxleft button {
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    font-family: 'DM Mono', monospace;
+    font-size: 20px;
+}
+
+div.ngelink {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin: 3px;
+}
+
+.facontact {
+    margin-top: 25px;
+    padding: 5px 20px 5px 20px;
+}
+
+.fadownload {
+    padding: 5px 20px 5px 20px;
+    text-decoration: black;
+    font-weight: bold;
+    color: black;
+}
+
+.social-media {
+    padding: 5px;
+}
+
+.social-media img {
+    margin: 5px;
+    background-color: white;
+    border-radius: 50%;
+    border-style: groove;
+}
+
+
+/*items 2*/
+div.boxright {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxright div.gambar {
+    justify-content: center;
+    flex: 1;
+
+}
+
+.boxright img {
+    width: 380px;
+    border-radius: 15px 15px 0px 0px;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+div.created {
+    width: 380px;
+    flex-direction: column;
+    margin: auto;
+    padding: 5px;
+    background-color: silver;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.boxright h3 {
+    text-align: center;
+}
+
+.boxright p {
+    text-align: center;
+}
+
+/*About*/
+
+.maincard {
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 50px 30px 50px;
+    box-sizing: border-box;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.maincard .headline p {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.maincard .action {
+    width: 350px;
+    margin-top: 20px;
+}
+
+.action form {
+    text-align: left;
+}
+
+.action label {
+    font-weight: 700;
+}
+
+.action input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+    font-family: 'DM Mono', monospace;
+    font-size: 20px;
+}
+
+.action select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+    font-family: 'DM Mono', monospace;
+    font-size: 20px;
+}
+
+.action textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+    font-family: 'DM Mono', monospace;
+    font-size: 20px;
+}
+
+.action .tombol {
+    text-align: right;
+}
+
+.action button {
+    color: white;
+    background: #ec4d37;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 25px;
+    font-size: 15px;
+}
